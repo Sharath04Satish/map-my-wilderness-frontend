@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'ReenieBeanie';
+  src: local('ReenieBeanie'), url(./fonts/ReenieBeanie-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Pacifico';
+  src: local('Pacifico'), url(./fonts/Pacifico-Regular.ttf) format('truetype');
+}

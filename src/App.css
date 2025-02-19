@@ -1,3 +1,101 @@
 .App {
-  text-align: center;
+  padding: 1rem 4rem;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.App h1 {
+  background-image: linear-gradient(90deg, #8eb398, #202020);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-family: 'Pacifico';
+}
+
+img {
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.postcard {
+  display: flex;
+  height: 70vh;
+}
+
+.postcard-letter {
+  background-color: #DFF3F2;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  line-height: 3rem;
+  font-size: 2em;
+  font-family: 'ReenieBeanie';
+  opacity: 0;
+  animation: revealText 10s ease forwards;
+}
+
+.sign-in {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-in-btn {
+  display: flex;
+  align-items: center;
+  background-color: #202020;
+  color: white;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  margin-left: 2rem;
+}
+
+@keyframes revealText {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.postcard-letter br {
+  animation: fadeInLine 0.5s ease-in-out forwards;
+  opacity: 0;
+}
+
+.postcard-letter br:nth-of-type(1) {
+  animation-delay: 1s;
+}
+
+.postcard-letter br:nth-of-type(2) {
+  animation-delay: 3s;
+}
+
+.postcard-letter br:nth-of-type(3) {
+  animation-delay: 5s;
+}
+
+.postcard-letter br:nth-of-type(4) {
+  animation-delay: 7s;
 }
